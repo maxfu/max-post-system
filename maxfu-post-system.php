@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: MaxFu Post System
+ * Plugin Name: Max Post System
  * Plugin URI:
  * Description: A plugin to add custom post types
  * Version: 1.0
  * Author: Max Fu
  * Author URI:
  * License: GPL2
- * Text Domain:       maxfu-custom-post-system
+ * Text Domain:       max-post-sys
  * Domain Path:       /languages
  */
 
@@ -24,7 +24,7 @@ define( 'SCRIPTS', ROOT . '/js/' );
  * @since 1.0.0
  */
 function mps_load_textdomain() {
-  load_plugin_textdomain( 'maxfu-post-system', false, basename( dirname( __FILE__ ) ) . '/languages' );
+  load_plugin_textdomain( 'max-post-sys', false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'init', 'mps_load_textdomain' );
@@ -82,37 +82,37 @@ function mps_advanced_options_get_meta( $value ) {
 // Register Custom Post Type
 function mps_slider_items() {
   $labels = array(
-    'name'                  => _x( 'Slider Items', 'Post Type General Name', 'maxfu-post-system' ),
-    'singular_name'         => _x( 'Slider Item', 'Post Type Singular Name', 'maxfu-post-system' ),
-    'menu_name'             => __( 'Slider Items', 'maxfu-post-system' ),
-    'name_admin_bar'        => __( 'Slider Items', 'maxfu-post-system' ),
-    'archives'              => __( 'Item Archives', 'maxfu-post-system' ),
-    'attributes'            => __( 'Item Attributes', 'maxfu-post-system' ),
-    'parent_item_colon'     => __( 'Parent Item:', 'maxfu-post-system' ),
-    'all_items'             => __( 'All Items', 'maxfu-post-system' ),
-    'add_new_item'          => __( 'Add New Item', 'maxfu-post-system' ),
-    'add_new'               => __( 'Add New', 'maxfu-post-system' ),
-    'new_item'              => __( 'New Item', 'maxfu-post-system' ),
-    'edit_item'             => __( 'Edit Item', 'maxfu-post-system' ),
-    'update_item'           => __( 'Update Item', 'maxfu-post-system' ),
-    'view_item'             => __( 'View Item', 'maxfu-post-system' ),
-    'view_items'            => __( 'View Items', 'maxfu-post-system' ),
-    'search_items'          => __( 'Search Item', 'maxfu-post-system' ),
-    'not_found'             => __( 'Not found', 'maxfu-post-system' ),
-    'not_found_in_trash'    => __( 'Not found in Trash', 'maxfu-post-system' ),
-    'featured_image'        => __( 'Featured Image', 'maxfu-post-system' ),
-    'set_featured_image'    => __( 'Set featured image', 'maxfu-post-system' ),
-    'remove_featured_image' => __( 'Remove featured image', 'maxfu-post-system' ),
-    'use_featured_image'    => __( 'Use as featured image', 'maxfu-post-system' ),
-    'insert_into_item'      => __( 'Insert into item', 'maxfu-post-system' ),
-    'uploaded_to_this_item' => __( 'Uploaded to this item', 'maxfu-post-system' ),
-    'items_list'            => __( 'Items list', 'maxfu-post-system' ),
-    'items_list_navigation' => __( 'Items list navigation', 'maxfu-post-system' ),
-    'filter_items_list'     => __( 'Filter items list', 'maxfu-post-system' ),
+    'name'                  => _x( 'Slider Items', 'Post Type General Name', 'max-post-sys' ),
+    'singular_name'         => _x( 'Slider Item', 'Post Type Singular Name', 'max-post-sys' ),
+    'menu_name'             => __( 'Slider Items', 'max-post-sys' ),
+    'name_admin_bar'        => __( 'Slider Items', 'max-post-sys' ),
+    'archives'              => __( 'Item Archives', 'max-post-sys' ),
+    'attributes'            => __( 'Item Attributes', 'max-post-sys' ),
+    'parent_item_colon'     => __( 'Parent Item:', 'max-post-sys' ),
+    'all_items'             => __( 'All Items', 'max-post-sys' ),
+    'add_new_item'          => __( 'Add New Item', 'max-post-sys' ),
+    'add_new'               => __( 'Add New', 'max-post-sys' ),
+    'new_item'              => __( 'New Item', 'max-post-sys' ),
+    'edit_item'             => __( 'Edit Item', 'max-post-sys' ),
+    'update_item'           => __( 'Update Item', 'max-post-sys' ),
+    'view_item'             => __( 'View Item', 'max-post-sys' ),
+    'view_items'            => __( 'View Items', 'max-post-sys' ),
+    'search_items'          => __( 'Search Item', 'max-post-sys' ),
+    'not_found'             => __( 'Not found', 'max-post-sys' ),
+    'not_found_in_trash'    => __( 'Not found in Trash', 'max-post-sys' ),
+    'featured_image'        => __( 'Featured Image', 'max-post-sys' ),
+    'set_featured_image'    => __( 'Set featured image', 'max-post-sys' ),
+    'remove_featured_image' => __( 'Remove featured image', 'max-post-sys' ),
+    'use_featured_image'    => __( 'Use as featured image', 'max-post-sys' ),
+    'insert_into_item'      => __( 'Insert into item', 'max-post-sys' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this item', 'max-post-sys' ),
+    'items_list'            => __( 'Items list', 'max-post-sys' ),
+    'items_list_navigation' => __( 'Items list navigation', 'max-post-sys' ),
+    'filter_items_list'     => __( 'Filter items list', 'max-post-sys' ),
   );
   $args = array(
-    'label'                 => __( 'Slider Item', 'maxfu-post-system' ),
-    'description'           => __( 'Header Slider Items', 'maxfu-post-system' ),
+    'label'                 => __( 'Slider Item', 'max-post-sys' ),
+    'description'           => __( 'Header Slider Items', 'max-post-sys' ),
     'labels'                => $labels,
     'supports'              => array( 'title', 'thumbnail' ),
     'taxonomies'            => array( 'category' ),
@@ -147,37 +147,37 @@ add_action( 'add_meta_boxes', 'mps_slider_items_add_meta_box' );
 
 function mps_survey_items() {
   $labels = array(
-    'name'                  => _x( 'Survey Items', 'Post Type General Name', 'maxfu-post-system' ),
-    'singular_name'         => _x( 'Survey Item', 'Post Type Singular Name', 'maxfu-post-system' ),
-    'menu_name'             => __( 'Survey Items', 'maxfu-post-system' ),
-    'name_admin_bar'        => __( 'Survey Items', 'maxfu-post-system' ),
-    'archives'              => __( 'Item Archives', 'maxfu-post-system' ),
-    'attributes'            => __( 'Item Attributes', 'maxfu-post-system' ),
-    'parent_item_colon'     => __( 'Parent Item:', 'maxfu-post-system' ),
-    'all_items'             => __( 'All Items', 'maxfu-post-system' ),
-    'add_new_item'          => __( 'Add New Item', 'maxfu-post-system' ),
-    'add_new'               => __( 'Add New', 'maxfu-post-system' ),
-    'new_item'              => __( 'New Item', 'maxfu-post-system' ),
-    'edit_item'             => __( 'Edit Item', 'maxfu-post-system' ),
-    'update_item'           => __( 'Update Item', 'maxfu-post-system' ),
-    'view_item'             => __( 'View Item', 'maxfu-post-system' ),
-    'view_items'            => __( 'View Items', 'maxfu-post-system' ),
-    'search_items'          => __( 'Search Item', 'maxfu-post-system' ),
-    'not_found'             => __( 'Not found', 'maxfu-post-system' ),
-    'not_found_in_trash'    => __( 'Not found in Trash', 'maxfu-post-system' ),
-    'featured_image'        => __( 'Featured Image', 'maxfu-post-system' ),
-    'set_featured_image'    => __( 'Set featured image', 'maxfu-post-system' ),
-    'remove_featured_image' => __( 'Remove featured image', 'maxfu-post-system' ),
-    'use_featured_image'    => __( 'Use as featured image', 'maxfu-post-system' ),
-    'insert_into_item'      => __( 'Insert into item', 'maxfu-post-system' ),
-    'uploaded_to_this_item' => __( 'Uploaded to this item', 'maxfu-post-system' ),
-    'items_list'            => __( 'Items list', 'maxfu-post-system' ),
-    'items_list_navigation' => __( 'Items list navigation', 'maxfu-post-system' ),
-    'filter_items_list'     => __( 'Filter items list', 'maxfu-post-system' ),
+    'name'                  => _x( 'Survey Items', 'Post Type General Name', 'max-post-sys' ),
+    'singular_name'         => _x( 'Survey Item', 'Post Type Singular Name', 'max-post-sys' ),
+    'menu_name'             => __( 'Survey Items', 'max-post-sys' ),
+    'name_admin_bar'        => __( 'Survey Items', 'max-post-sys' ),
+    'archives'              => __( 'Item Archives', 'max-post-sys' ),
+    'attributes'            => __( 'Item Attributes', 'max-post-sys' ),
+    'parent_item_colon'     => __( 'Parent Item:', 'max-post-sys' ),
+    'all_items'             => __( 'All Items', 'max-post-sys' ),
+    'add_new_item'          => __( 'Add New Item', 'max-post-sys' ),
+    'add_new'               => __( 'Add New', 'max-post-sys' ),
+    'new_item'              => __( 'New Item', 'max-post-sys' ),
+    'edit_item'             => __( 'Edit Item', 'max-post-sys' ),
+    'update_item'           => __( 'Update Item', 'max-post-sys' ),
+    'view_item'             => __( 'View Item', 'max-post-sys' ),
+    'view_items'            => __( 'View Items', 'max-post-sys' ),
+    'search_items'          => __( 'Search Item', 'max-post-sys' ),
+    'not_found'             => __( 'Not found', 'max-post-sys' ),
+    'not_found_in_trash'    => __( 'Not found in Trash', 'max-post-sys' ),
+    'featured_image'        => __( 'Featured Image', 'max-post-sys' ),
+    'set_featured_image'    => __( 'Set featured image', 'max-post-sys' ),
+    'remove_featured_image' => __( 'Remove featured image', 'max-post-sys' ),
+    'use_featured_image'    => __( 'Use as featured image', 'max-post-sys' ),
+    'insert_into_item'      => __( 'Insert into item', 'max-post-sys' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this item', 'max-post-sys' ),
+    'items_list'            => __( 'Items list', 'max-post-sys' ),
+    'items_list_navigation' => __( 'Items list navigation', 'max-post-sys' ),
+    'filter_items_list'     => __( 'Filter items list', 'max-post-sys' ),
   );
   $args = array(
-    'label'                 => __( 'Survey Item', 'maxfu-post-system' ),
-    'description'           => __( 'Header Survey Items', 'maxfu-post-system' ),
+    'label'                 => __( 'Survey Item', 'max-post-sys' ),
+    'description'           => __( 'Header Survey Items', 'max-post-sys' ),
     'labels'                => $labels,
     'supports'              => array( 'title', 'thumbnail' ),
     'taxonomies'            => array( 'category' ),
