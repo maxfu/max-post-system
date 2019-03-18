@@ -4,7 +4,7 @@
  * Plugin URI:
  * Description: A plugin to add custom post types
  * Version: 1.0
- * Author: Max Fu
+ * Author: Max
  * Author URI:
  * License: GPL2
  * Text Domain:       max-post-sys
