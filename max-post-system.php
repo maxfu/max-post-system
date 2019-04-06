@@ -248,3 +248,12 @@ function get_survey_template( $single_template ) {
     return $single_template;
  }
 add_filter( 'single_template', 'get_survey_template' );
+
+function get_archive_survey_template( $archive_template ) {
+    global $post;
+    if ($post->post_type == 'survey') {
+        $archive_template = dirname( __FILE__ ) . '/templates/archive-survey.php';
+    }
+    return $archive_template;
+ }
+add_filter( 'archive_template', 'get_archive_survey_template' );
