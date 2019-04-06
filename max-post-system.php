@@ -239,3 +239,12 @@ add_action( 'add_meta_boxes', 'mps_survey_items_add_meta_box' );
    Usage: mps_advanced_options_get_meta( 'advanced_options_destination_link' )
    Usage: mps_advanced_options_get_meta( 'advanced_options_event_date' )
  */
+
+function get_survey_template( $single_template ) {
+    global $post;
+    if ($post->post_type == 'survey-items') {
+        $single_template = dirname( __FILE__ ) . '/templates/single-survey-items.php';
+    }
+    return $single_template;
+ }
+add_filter( 'single_template', 'get_survey_template' );
