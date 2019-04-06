@@ -214,12 +214,12 @@ add_action( 'add_meta_boxes', 'mps_survey_items_add_meta_box' );
    wp_nonce_field( '_advanced_options_nonce', 'advanced_options_nonce' ); ?>
 
    <p>
-     <label for="advanced_options_destination_link"><?php _e( 'Destination Link', 'advanced_options' ); ?></label><br>
-     <input type="text" name="advanced_options_destination_link" id="advanced_options_destination_link" value="<?php echo mps_advanced_options_get_meta( 'advanced_options_destination_link' ); ?>">
+     <label for="destination_link"><?php _e( 'Destination Link', 'advanced_options' ); ?></label><br>
+     <input type="text" name="destination_link" id="destination_link" value="<?php echo mps_advanced_options_get_meta( 'destination_link' ); ?>">
    </p>
    <p>
-     <label for="advanced_options_event_date"><?php _e( 'Event Date', 'advanced_options' ); ?></label><br>
-     <input type="date" name="advanced_options_event_date" id="advanced_options_event_date" value="<?php echo mps_advanced_options_get_meta( 'advanced_options_event_date' ); ?>">
+     <label for="event_date"><?php _e( 'Event Date', 'advanced_options' ); ?></label><br>
+     <input type="date" name="event_date" id="event_date" value="<?php echo mps_advanced_options_get_meta( 'event_date' ); ?>">
    </p><?php
  }
 
@@ -228,21 +228,21 @@ add_action( 'add_meta_boxes', 'mps_survey_items_add_meta_box' );
    if ( ! isset( $_POST['advanced_options_nonce'] ) || ! wp_verify_nonce( $_POST['advanced_options_nonce'], '_advanced_options_nonce' ) ) return;
    if ( ! current_user_can( 'edit_post', $post_id ) ) return;
 
-   if ( isset( $_POST['advanced_options_destination_link'] ) )
-     update_post_meta( $post_id, 'advanced_options_destination_link', esc_attr( $_POST['advanced_options_destination_link'] ) );
-   if ( isset( $_POST['advanced_options_event_date'] ) )
-     update_post_meta( $post_id, 'advanced_options_event_date', esc_attr( $_POST['advanced_options_event_date'] ) );
+   if ( isset( $_POST['destination_link'] ) )
+     update_post_meta( $post_id, 'destination_link', esc_attr( $_POST['destination_link'] ) );
+   if ( isset( $_POST['event_date'] ) )
+     update_post_meta( $post_id, 'event_date', esc_attr( $_POST['event_date'] ) );
  }
  add_action( 'save_post', 'mps_advanced_options_save' );
 
  /*
-   Usage: mps_advanced_options_get_meta( 'advanced_options_destination_link' )
-   Usage: mps_advanced_options_get_meta( 'advanced_options_event_date' )
+   Usage: mps_advanced_options_get_meta( 'destination_link' )
+   Usage: mps_advanced_options_get_meta( 'event_date' )
  */
 
 function get_survey_template( $single_template ) {
     global $post;
-    if ($post->post_type == 'survey-items') {
+    if ($post->post_type == 'event') {
         $single_template = dirname( __FILE__ ) . '/templates/single-survey-items.php';
     }
     return $single_template;
