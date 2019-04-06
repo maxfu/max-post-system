@@ -242,7 +242,7 @@ add_action( 'add_meta_boxes', 'mps_survey_items_add_meta_box' );
 
 function get_survey_template( $single_template ) {
     global $post;
-    if ($post->post_type == 'slider-items') {
+    if ($post->post_type == 'survey') {
         $single_template = dirname( __FILE__ ) . '/templates/single-survey.php';
     }
     return $single_template;
