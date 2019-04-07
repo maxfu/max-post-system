@@ -145,7 +145,7 @@ function mps_slider_items_add_meta_box() {
 }
 add_action( 'add_meta_boxes', 'mps_slider_items_add_meta_box' );
 
-function mps_survey_items() {
+function mps_questionnaire() {
   $labels = array(
     'name'                  => _x( 'Questionnaire', 'Post Type General Name', 'max-post' ),
     'singular_name'         => _x( 'Questionnaire', 'Post Type Singular Name', 'max-post' ),
@@ -194,21 +194,21 @@ function mps_survey_items() {
     'publicly_queryable'    => true,
     'capability_type'       => 'page',
   );
-  register_post_type( 'survey', $args );
+  register_post_type( 'questionnaire', $args );
 }
-add_action( 'init', 'mps_survey_items', 0 );
+add_action( 'init', 'mps_questionnaire', 0 );
 
-function mps_survey_items_add_meta_box() {
+function mps_questionnaire_add_meta_box() {
   add_meta_box(
     'advanced_options-advanced-options',
     __( 'Advanced Options', 'advanced_options' ),
     'mps_advanced_options_html',
-    'survey',
+    'questionnaire',
     'normal',
     'default'
   );
 }
-add_action( 'add_meta_boxes', 'mps_survey_items_add_meta_box' );
+add_action( 'add_meta_boxes', 'mps_questionnaire_add_meta_box' );
 
  function mps_advanced_options_html( $post) {
    wp_nonce_field( '_advanced_options_nonce', 'advanced_options_nonce' ); ?>
@@ -240,20 +240,20 @@ add_action( 'add_meta_boxes', 'mps_survey_items_add_meta_box' );
    Usage: mps_advanced_options_get_meta( 'event_date' )
  */
 
-function get_survey_template( $single_template ) {
+function get_questionnaire_template( $single_template ) {
     global $post;
-    if ($post->post_type == 'survey') {
-        $single_template = dirname( __FILE__ ) . '/templates/single-survey.php';
+    if ($post->post_type == 'questionnaire') {
+        $single_template = dirname( __FILE__ ) . '/templates/single-questionnaire.php';
     }
     return $single_template;
  }
-add_filter( 'single_template', 'get_survey_template' );
+add_filter( 'single_template', 'get_questionnaire_template' );
 
-function get_archive_survey_template( $archive_template ) {
+function get_archive_questionnaire_template( $archive_template ) {
     global $post;
-    if ($post->post_type == 'survey') {
-        $archive_template = dirname( __FILE__ ) . '/templates/archive-survey.php';
+    if ($post->post_type == 'questionnaire') {
+        $archive_template = dirname( __FILE__ ) . '/templates/archive-questionnaire.php';
     }
     return $archive_template;
  }
-add_filter( 'archive_template', 'get_archive_survey_template' );
+add_filter( 'archive_template', 'get_archive_questionnaire_template' );
