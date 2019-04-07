@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="media-container-row">
 				<div class="title col-12">
-					<h2 class="align-center mbr-bold mbr-white mbr-fonts-style display-1"><a href="<?php echo get_post_type_archive_link( 'survey' ); ?>" title="<?php _e( 'Survey', 'max-post' ); ?>"><?php _e( 'Events', 'max-post' ); ?></a></h2>
+					<h2 class="align-center mbr-bold mbr-white mbr-fonts-style display-1"><a href="<?php echo get_post_type_archive_link( 'survey' ); ?>" title="<?php _e( 'Survey', 'max-post' ); ?>"><?php _e( 'Survey', 'max-post' ); ?></a></h2>
 				</div>
 			</div>
 		</div>
