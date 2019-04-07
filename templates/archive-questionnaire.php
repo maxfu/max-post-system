@@ -13,7 +13,7 @@
 		<div class="container">
 			<div class="media-container-row">
 				<div class="title col-12">
-					<h2 class="align-center mbr-bold mbr-white mbr-fonts-style display-1"><a href="<?php echo get_post_type_archive_link( 'survey' ); ?>" title="<?php _e( 'Survey', 'max-post' ); ?>"><?php _e( 'Survey', 'max-post' ); ?></a></h2>
+					<h2 class="align-center mbr-bold mbr-white mbr-fonts-style display-1"><a href="<?php echo get_post_type_archive_link( 'questionnaire' ); ?>" title="<?php _e( 'Questionnaire', 'max-post' ); ?>"><?php _e( 'Questionnaire', 'max-post' ); ?></a></h2>
 				</div>
 			</div>
 		</div>
@@ -26,7 +26,7 @@
                 <div class="mbr-text col-12 mbr-fonts-style display-7">
 						<?php $args = array(
 							'post_status' => 'publish',
-							'post_type' => 'survey',
+							'post_type' => 'questionnaire',
 							'meta_key' => 'event_date',
 							'orderby' => 'meta_value_num',
 							'order' => 'DESC',
@@ -40,7 +40,7 @@
 						<?php else: ?>
 							<!-- article -->
 							<article>
-								<h2><?php _e( 'More survey coming soon!', 'max-post' ); ?></h2>
+								<h2><?php _e( 'More questionnaire coming soon!', 'max-post' ); ?></h2>
 							</article>
 							<!-- /article -->
 						<?php endif; ?>
