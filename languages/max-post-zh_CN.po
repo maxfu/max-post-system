@@ -12,7 +12,58 @@ msgid "Slider Items"
 msgstr "轮播条目"
 
 #: 
-msgctxt "Slider Item"
 msgid "Slider Item"
 msgstr "轮播条目"
+
+#: 
+msgid "Questionnaire"
+msgstr "问卷调查"
+
+#: 
+msgid "Questionnaire Archives"
+msgstr "问卷调查归档"
+
+#: 
+msgid "Questionnaire Attributes"
+msgstr "Questionnaire Attributes"
+
+#: 
+msgid "Parent Questionnaire:"
+msgstr "父级问卷调查："
+
+#: 
+msgid "All Questionnaire"
+msgstr "全部问卷调查"
+
+#: 
+msgid "Add New Questionnaire"
+msgstr "新增问卷调查"
+
+#: 
+msgid "New Questionnaire"
+msgstr "新问卷调查"
+
+#: 
+msgid "Edit Questionnaire"
+msgstr "编辑问卷调查"
+
+#: 
+msgid "Update Questionnaire"
+msgstr "更新问卷调查"
+
+#: 
+msgid "View Questionnaire"
+msgstr "查看问卷调查"
+
+#: 
+msgid "Search Questionnaire"
+msgstr "搜索问卷调查"
+
+#: 
+msgid "Sorry, nothing to display."
+msgstr "精彩内容即将呈现！"
+
+#: 
+msgid "More questionnaire coming soon!"
+msgstr "更多问卷敬请期待！"
 

@@ -12,7 +12,58 @@ msgid "Slider Items"
 msgstr "Slider Items"
 
 #: 
-msgctxt "Slider Item"
 msgid "Slider Item"
 msgstr "Slider Item"
+
+#: 
+msgid "Questionnaire"
+msgstr "Questionnaire"
+
+#: 
+msgid "Questionnaire Archives"
+msgstr "Questionnaire Archives"
+
+#: 
+msgid "Questionnaire Attributes"
+msgstr "Questionnaire Attributes"
+
+#: 
+msgid "Parent Questionnaire:"
+msgstr "Parent Questionnaire:"
+
+#: 
+msgid "All Questionnaire"
+msgstr "All Questionnaire"
+
+#: 
+msgid "Add New Questionnaire"
+msgstr "Add New Questionnaire"
+
+#: 
+msgid "New Questionnaire"
+msgstr "New Questionnaire"
+
+#: 
+msgid "Edit Questionnaire"
+msgstr "Edit Questionnaire"
+
+#: 
+msgid "Update Questionnaire"
+msgstr "Update Questionnaire"
+
+#: 
+msgid "View Questionnaire"
+msgstr "View Questionnaire"
+
+#: 
+msgid "Search Questionnaire"
+msgstr "Search Questionnaire"
+
+#: 
+msgid "Sorry, nothing to display."
+msgstr "Sorry, nothing to display."
+
+#: 
+msgid "More questionnaire coming soon!"
+msgstr "More questionnaire coming soon!"
 
