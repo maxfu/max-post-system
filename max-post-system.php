@@ -7,7 +7,7 @@
  * Author: Max
  * Author URI:
  * License: GPL2
- * Text Domain:       max-post-sys
+ * Text Domain:       max-post
  * Domain Path:       /languages
  */
 
@@ -86,29 +86,6 @@ function mps_slider_items() {
     'singular_name'         => _x( 'Slider Item', 'Post Type Singular Name', 'max-post' ),
     'menu_name'             => __( 'Slider Items', 'max-post' ),
     'name_admin_bar'        => __( 'Slider Items', 'max-post' ),
-    'archives'              => __( 'Item Archives', 'max-post' ),
-    'attributes'            => __( 'Item Attributes', 'max-post' ),
-    'parent_item_colon'     => __( 'Parent Item:', 'max-post' ),
-    'all_items'             => __( 'All Items', 'max-post' ),
-    'add_new_item'          => __( 'Add New Item', 'max-post' ),
-    'add_new'               => __( 'Add New', 'max-post' ),
-    'new_item'              => __( 'New Item', 'max-post' ),
-    'edit_item'             => __( 'Edit Item', 'max-post' ),
-    'update_item'           => __( 'Update Item', 'max-post' ),
-    'view_item'             => __( 'View Item', 'max-post' ),
-    'view_items'            => __( 'View Items', 'max-post' ),
-    'search_items'          => __( 'Search Item', 'max-post' ),
-    'not_found'             => __( 'Not found', 'max-post' ),
-    'not_found_in_trash'    => __( 'Not found in Trash', 'max-post' ),
-    'featured_image'        => __( 'Featured Image', 'max-post' ),
-    'set_featured_image'    => __( 'Set featured image', 'max-post' ),
-    'remove_featured_image' => __( 'Remove featured image', 'max-post' ),
-    'use_featured_image'    => __( 'Use as featured image', 'max-post' ),
-    'insert_into_item'      => __( 'Insert into item', 'max-post' ),
-    'uploaded_to_this_item' => __( 'Uploaded to this item', 'max-post' ),
-    'items_list'            => __( 'Items list', 'max-post' ),
-    'items_list_navigation' => __( 'Items list navigation', 'max-post' ),
-    'filter_items_list'     => __( 'Filter items list', 'max-post' ),
   );
   $args = array(
     'label'                 => __( 'Slider Item', 'max-post' ),
@@ -156,19 +133,12 @@ function mps_questionnaire() {
     'parent_item_colon'     => __( 'Parent Questionnaire:', 'max-post' ),
     'all_items'             => __( 'All Questionnaire', 'max-post' ),
     'add_new_item'          => __( 'Add New Questionnaire', 'max-post' ),
-    'add_new'               => __( 'Add New', 'max-post' ),
     'new_item'              => __( 'New Questionnaire', 'max-post' ),
     'edit_item'             => __( 'Edit Questionnaire', 'max-post' ),
     'update_item'           => __( 'Update Questionnaire', 'max-post' ),
     'view_item'             => __( 'View Questionnaire', 'max-post' ),
     'view_items'            => __( 'View Questionnaire', 'max-post' ),
     'search_items'          => __( 'Search Questionnaire', 'max-post' ),
-    'not_found'             => __( 'Not found', 'max-post' ),
-    'not_found_in_trash'    => __( 'Not found in Trash', 'max-post' ),
-    'featured_image'        => __( 'Featured Image', 'max-post' ),
-    'set_featured_image'    => __( 'Set featured image', 'max-post' ),
-    'remove_featured_image' => __( 'Remove featured image', 'max-post' ),
-    'use_featured_image'    => __( 'Use as featured image', 'max-post' ),
     'insert_into_item'      => __( 'Insert into questionnaire', 'max-post' ),
     'uploaded_to_this_item' => __( 'Uploaded to this questionnaire', 'max-post' ),
     'items_list'            => __( 'Questionnaire list', 'max-post' ),
